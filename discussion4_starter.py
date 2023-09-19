@@ -29,8 +29,12 @@ class Rectangle():
     #       False otherwise
 
     # YOUR CODE HERE
-
-
+    def verify_imput(self):
+        if self.width > 0 and self.height >0:
+            return True
+        else:
+            return False
+    
 
     # Create the "area" method
     #
@@ -38,6 +42,11 @@ class Rectangle():
     # Otherwise, it returns the area of the rectangle.
 
     # YOUR CODE HERE
+    def area(self):
+        if self.verify_imput():
+            return self.width * self.height
+        else:
+            return "Invalid input"
 
 
 
